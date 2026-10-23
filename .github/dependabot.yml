@@ -23,11 +23,17 @@ updates:
       # Keep Node type definitions aligned with the Node 22 LTS runtime.
       - dependency-name: '@types/node'
         update-types: ['version-update:semver-major']
+      # vue-tsc and typescript-eslint do not support TypeScript 7 yet.
+      - dependency-name: 'typescript'
+        update-types: ['version-update:semver-major']
 
   - package-ecosystem: npm
     directory: /strapi
     schedule:
       interval: weekly
+    ignore:
+      - dependency-name: '@types/node'
+        update-types: ['version-update:semver-major']
     groups:
       strapi:
         patterns: ['@strapi/*']
@@ -41,3 +47,7 @@ updates:
     directories: ['/', '/strapi']
     schedule:
       interval: monthly
+    ignore:
+      # Move between Node LTS lines deliberately, not to odd-numbered releases.
+      - dependency-name: 'node'
+        update-types: ['version-update:semver-major']

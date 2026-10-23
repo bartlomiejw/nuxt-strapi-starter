@@ -1,0 +1,72 @@
+# Local stack: PostgreSQL + Strapi 5 (+ the Nuxt app with `--profile web`).
+#
+#   docker compose up -d            # CMS only, run Nuxt with `pnpm dev`
+#   docker compose --profile web up # CMS + production Nuxt build on :3000
+
+services:
+  postgres:
+    image: postgres:17-alpine
+    restart: unless-stopped
+    environment:
+      POSTGRES_DB: strapi
+      POSTGRES_USER: strapi
+      POSTGRES_PASSWORD: ${DATABASE_PASSWORD:-strapi}
+    volumes:
+      - postgres-data:/var/lib/postgresql/data
+    healthcheck:
+      test: [CMD-SHELL, pg_isready -U strapi -d strapi]
+      interval: 5s
+      timeout: 5s
+      retries: 10
+
+  strapi:
+    build: ./strapi
+    restart: unless-stopped
+    depends_on:
+      postgres:
+        condition: service_healthy
+    env_file:
+      - path: ./strapi/.env
+        required: false
+    environment:
+      DATABASE_CLIENT: postgres
+      DATABASE_HOST: postgres
+      DATABASE_PORT: 5432
+      DATABASE_NAME: strapi
+      DATABASE_USERNAME: strapi
+      DATABASE_PASSWORD: ${DATABASE_PASSWORD:-strapi}
+      CORS_ORIGINS: http://localhost:3000
+      # Development defaults only. Set real secrets in strapi/.env for anything public.
+      APP_KEYS: ${APP_KEYS:-dev-key-1,dev-key-2}
+      API_TOKEN_SALT: ${API_TOKEN_SALT:-dev-api-token-salt}
+      ADMIN_JWT_SECRET: ${ADMIN_JWT_SECRET:-dev-admin-jwt-secret}
+      TRANSFER_TOKEN_SALT: ${TRANSFER_TOKEN_SALT:-dev-transfer-token-salt}
+      JWT_SECRET: ${JWT_SECRET:-dev-jwt-secret}
+      ENCRYPTION_KEY: ${ENCRYPTION_KEY:-dev-encryption-key}
+    ports:
+      - '1337:1337'
+    volumes:
+      - strapi-uploads:/opt/app/public/uploads
+    healthcheck:
+      test: [CMD-SHELL, wget -qO- http://127.0.0.1:1337/_health || exit 1]
+      interval: 10s
+      timeout: 5s
+      retries: 30
+      start_period: 30s
+
+  web:
+    profiles: [web]
+    build: .
+    depends_on:
+      strapi:
+        condition: service_healthy
+    environment:
+      NUXT_STRAPI_URL: http://strapi:1337
+      NUXT_PUBLIC_STRAPI_URL: http://localhost:1337
+      NUXT_PUBLIC_SITE_URL: http://localhost:3000
+    ports:
+      - '3000:3000'
+
+volumes:
+  postgres-data:
+  strapi-uploads:

@@ -1,0 +1,11 @@
+{
+  // Type-checks files outside the Nuxt runtime: Node unit tests, Playwright tests and tooling config.
+  "extends": "./.nuxt/tsconfig.node.json",
+  "include": [
+    "tests/unit/**/*",
+    "tests/e2e/**/*",
+    "tests/fixtures/**/*",
+    "playwright.config.ts",
+    "vitest.config.ts"
+  ]
+}

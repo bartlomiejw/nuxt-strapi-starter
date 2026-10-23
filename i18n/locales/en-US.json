@@ -1,0 +1,105 @@
+{
+  "site": {
+    "name": "Nuxt Strapi Starter",
+    "description": "A Nuxt 4 + Strapi 5 starter with PrimeVue, Tailwind CSS, i18n and Sentry.",
+    "footer": "Built with Nuxt, Strapi and PrimeVue."
+  },
+  "a11y": {
+    "skipToContent": "Skip to content",
+    "language": "Language",
+    "theme": "Color theme",
+    "mainNavigation": "Main navigation"
+  },
+  "themes": {
+    "system": "System",
+    "light": "Light",
+    "dark": "Dark"
+  },
+  "menu": {
+    "home": "Home",
+    "blog": "Blog",
+    "about": "About",
+    "contact": "Contact",
+    "minimal": "Minimal layout"
+  },
+  "error": {
+    "return": "Back to home",
+    "pageNotFound": "Page not found",
+    "generic": "Something went wrong"
+  },
+  "pages": {
+    "index": {
+      "title": "Home",
+      "description": "A production-minded Nuxt 4 and Strapi 5 starter.",
+      "hero": {
+        "eyebrow": "Open-source starter",
+        "title": "Nuxt + Strapi, ready for production",
+        "description": "Server-side rendered Nuxt 4 front end with a headless Strapi 5 CMS, PrimeVue components, Tailwind CSS, localisation with RTL support, error monitoring and a complete test and CI setup.",
+        "cta": "Read the blog"
+      },
+      "featuresTitle": "What is included",
+      "features": {
+        "ssr": "Nuxt 4 SSR",
+        "strapi": "Strapi 5 REST integration",
+        "primevue": "PrimeVue themed components",
+        "tailwind": "Tailwind CSS 4",
+        "i18n": "i18n with RTL",
+        "darkMode": "Dark mode",
+        "pinia": "Pinia state",
+        "sentry": "Sentry monitoring",
+        "icons": "Iconify icons",
+        "cookies": "Cookie consent",
+        "testing": "Vitest + Playwright",
+        "lint": "ESLint + TypeScript",
+        "ci": "GitHub Actions CI"
+      }
+    },
+    "about": {
+      "title": "About",
+      "description": "About this starter.",
+      "body": [
+        "This project is a starting point for content-driven websites: Nuxt renders pages on the server while Strapi provides a headless CMS for editors.",
+        "It focuses on the boring-but-important parts — typed data fetching, graceful failure when the CMS is unavailable, localisation, accessibility, monitoring and automated checks — so you can start building features straight away."
+      ]
+    },
+    "contact": {
+      "title": "Contact",
+      "description": "Get in touch.",
+      "body": [
+        "Found a bug or have an idea? Open an issue or a pull request on GitHub.",
+        "Contributions of any size are welcome — see CONTRIBUTING.md for the workflow."
+      ]
+    },
+    "minimal": {
+      "title": "Minimal layout",
+      "description": "A page using the full-screen layout.",
+      "body": [
+        "This page uses the full-screen layout, without the header and footer of the default layout.",
+        "Use it for landing pages, embeds or print views."
+      ],
+      "back": "Back"
+    },
+    "blog": {
+      "title": "Blog",
+      "description": "Articles managed in Strapi.",
+      "intro": "Articles are fetched from Strapi on the server and localised using the current language.",
+      "readMore": "Read article",
+      "backToList": "All articles",
+      "publishedOn": "Published on {date}",
+      "loading": "Loading articles…",
+      "empty": {
+        "title": "No articles yet",
+        "description": "There are no published articles in this language. Add some in the Strapi admin panel."
+      },
+      "unavailable": {
+        "title": "The content service is unavailable",
+        "description": "We could not reach the CMS right now. Please try again in a moment.",
+        "retry": "Try again"
+      },
+      "notFound": {
+        "title": "Article not found",
+        "description": "This article does not exist or is not available in this language."
+      }
+    }
+  }
+}

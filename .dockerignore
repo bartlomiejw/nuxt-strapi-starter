@@ -1,0 +1,17 @@
+.git
+.github
+.husky
+.idea
+.vscode
+.nuxt
+.output
+.data
+node_modules
+coverage
+playwright-report
+test-results
+strapi
+.env
+.env.*
+!.env.example
+*.log

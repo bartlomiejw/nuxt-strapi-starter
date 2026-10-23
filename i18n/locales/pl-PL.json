@@ -1,0 +1,105 @@
+{
+  "site": {
+    "name": "Nuxt Strapi Starter",
+    "description": "Starter Nuxt 4 + Strapi 5 z PrimeVue, Tailwind CSS, i18n i Sentry.",
+    "footer": "Zbudowane z Nuxt, Strapi i PrimeVue."
+  },
+  "a11y": {
+    "skipToContent": "Przejdź do treści",
+    "language": "Język",
+    "theme": "Motyw kolorystyczny",
+    "mainNavigation": "Nawigacja główna"
+  },
+  "themes": {
+    "system": "Systemowy",
+    "light": "Jasny",
+    "dark": "Ciemny"
+  },
+  "menu": {
+    "home": "Strona główna",
+    "blog": "Blog",
+    "about": "O projekcie",
+    "contact": "Kontakt",
+    "minimal": "Układ minimalny"
+  },
+  "error": {
+    "return": "Wróć na stronę główną",
+    "pageNotFound": "Nie znaleziono strony",
+    "generic": "Coś poszło nie tak"
+  },
+  "pages": {
+    "index": {
+      "title": "Strona główna",
+      "description": "Gotowy do produkcji starter Nuxt 4 i Strapi 5.",
+      "hero": {
+        "eyebrow": "Starter open source",
+        "title": "Nuxt + Strapi, gotowe do produkcji",
+        "description": "Renderowany po stronie serwera front-end w Nuxt 4 z headless CMS Strapi 5, komponentami PrimeVue, Tailwind CSS, lokalizacją z obsługą RTL, monitoringiem błędów oraz kompletnymi testami i CI.",
+        "cta": "Przejdź do bloga"
+      },
+      "featuresTitle": "Co zawiera",
+      "features": {
+        "ssr": "Nuxt 4 SSR",
+        "strapi": "Integracja REST ze Strapi 5",
+        "primevue": "Komponenty PrimeVue z motywem",
+        "tailwind": "Tailwind CSS 4",
+        "i18n": "i18n z RTL",
+        "darkMode": "Tryb ciemny",
+        "pinia": "Stan w Pinia",
+        "sentry": "Monitoring Sentry",
+        "icons": "Ikony Iconify",
+        "cookies": "Zgoda na cookies",
+        "testing": "Vitest + Playwright",
+        "lint": "ESLint + TypeScript",
+        "ci": "CI w GitHub Actions"
+      }
+    },
+    "about": {
+      "title": "O projekcie",
+      "description": "O tym starterze.",
+      "body": [
+        "Ten projekt to punkt wyjścia dla serwisów opartych na treści: Nuxt renderuje strony na serwerze, a Strapi dostarcza redaktorom headless CMS.",
+        "Skupia się na nudnych, ale ważnych elementach — typowanym pobieraniu danych, łagodnej obsłudze niedostępności CMS, lokalizacji, dostępności, monitoringu i automatycznych testach — dzięki czemu możesz od razu budować funkcje."
+      ]
+    },
+    "contact": {
+      "title": "Kontakt",
+      "description": "Skontaktuj się.",
+      "body": [
+        "Znalazłeś błąd lub masz pomysł? Otwórz zgłoszenie lub pull request na GitHubie.",
+        "Każdy wkład jest mile widziany — opis procesu znajdziesz w CONTRIBUTING.md."
+      ]
+    },
+    "minimal": {
+      "title": "Układ minimalny",
+      "description": "Strona korzystająca z układu pełnoekranowego.",
+      "body": [
+        "Ta strona używa układu pełnoekranowego, bez nagłówka i stopki układu domyślnego.",
+        "Sprawdzi się przy stronach docelowych, osadzeniach lub widokach do druku."
+      ],
+      "back": "Wstecz"
+    },
+    "blog": {
+      "title": "Blog",
+      "description": "Artykuły zarządzane w Strapi.",
+      "intro": "Artykuły są pobierane ze Strapi po stronie serwera i lokalizowane zgodnie z bieżącym językiem.",
+      "readMore": "Czytaj artykuł",
+      "backToList": "Wszystkie artykuły",
+      "publishedOn": "Opublikowano {date}",
+      "loading": "Wczytywanie artykułów…",
+      "empty": {
+        "title": "Brak artykułów",
+        "description": "W tym języku nie ma jeszcze opublikowanych artykułów. Dodaj je w panelu administracyjnym Strapi."
+      },
+      "unavailable": {
+        "title": "Serwis z treścią jest niedostępny",
+        "description": "Nie udało się teraz połączyć z CMS. Spróbuj ponownie za chwilę.",
+        "retry": "Spróbuj ponownie"
+      },
+      "notFound": {
+        "title": "Nie znaleziono artykułu",
+        "description": "Ten artykuł nie istnieje lub nie jest dostępny w tym języku."
+      }
+    }
+  }
+}

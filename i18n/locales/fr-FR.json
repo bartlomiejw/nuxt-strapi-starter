@@ -1,0 +1,105 @@
+{
+  "site": {
+    "name": "Nuxt Strapi Starter",
+    "description": "Un starter Nuxt 4 + Strapi 5 avec PrimeVue, Tailwind CSS, i18n et Sentry.",
+    "footer": "Construit avec Nuxt, Strapi et PrimeVue."
+  },
+  "a11y": {
+    "skipToContent": "Aller au contenu",
+    "language": "Langue",
+    "theme": "Thème de couleur",
+    "mainNavigation": "Navigation principale"
+  },
+  "themes": {
+    "system": "Système",
+    "light": "Clair",
+    "dark": "Sombre"
+  },
+  "menu": {
+    "home": "Accueil",
+    "blog": "Blog",
+    "about": "À propos",
+    "contact": "Contact",
+    "minimal": "Mise en page minimale"
+  },
+  "error": {
+    "return": "Retour à l'accueil",
+    "pageNotFound": "Page introuvable",
+    "generic": "Une erreur s'est produite"
+  },
+  "pages": {
+    "index": {
+      "title": "Accueil",
+      "description": "Un starter Nuxt 4 et Strapi 5 prêt pour la production.",
+      "hero": {
+        "eyebrow": "Starter open source",
+        "title": "Nuxt + Strapi, prêt pour la production",
+        "description": "Un front-end Nuxt 4 rendu côté serveur avec un CMS headless Strapi 5, des composants PrimeVue, Tailwind CSS, une localisation avec prise en charge du RTL, la surveillance des erreurs et une configuration complète de tests et de CI.",
+        "cta": "Lire le blog"
+      },
+      "featuresTitle": "Ce qui est inclus",
+      "features": {
+        "ssr": "Nuxt 4 SSR",
+        "strapi": "Intégration REST Strapi 5",
+        "primevue": "Composants PrimeVue thématisés",
+        "tailwind": "Tailwind CSS 4",
+        "i18n": "i18n avec RTL",
+        "darkMode": "Mode sombre",
+        "pinia": "État avec Pinia",
+        "sentry": "Surveillance Sentry",
+        "icons": "Icônes Iconify",
+        "cookies": "Consentement aux cookies",
+        "testing": "Vitest + Playwright",
+        "lint": "ESLint + TypeScript",
+        "ci": "CI GitHub Actions"
+      }
+    },
+    "about": {
+      "title": "À propos",
+      "description": "À propos de ce starter.",
+      "body": [
+        "Ce projet est un point de départ pour les sites éditoriaux : Nuxt rend les pages côté serveur tandis que Strapi fournit un CMS headless aux rédacteurs.",
+        "Il se concentre sur les aspects essentiels — récupération de données typée, dégradation élégante quand le CMS est indisponible, localisation, accessibilité, surveillance et vérifications automatisées — pour que vous puissiez développer des fonctionnalités immédiatement."
+      ]
+    },
+    "contact": {
+      "title": "Contact",
+      "description": "Nous contacter.",
+      "body": [
+        "Vous avez trouvé un bug ou une idée ? Ouvrez une issue ou une pull request sur GitHub.",
+        "Toutes les contributions sont les bienvenues — consultez CONTRIBUTING.md pour le processus."
+      ]
+    },
+    "minimal": {
+      "title": "Mise en page minimale",
+      "description": "Une page utilisant la mise en page plein écran.",
+      "body": [
+        "Cette page utilise la mise en page plein écran, sans l'en-tête ni le pied de page de la mise en page par défaut.",
+        "Utilisez-la pour des pages d'atterrissage, des intégrations ou des vues d'impression."
+      ],
+      "back": "Retour"
+    },
+    "blog": {
+      "title": "Blog",
+      "description": "Articles gérés dans Strapi.",
+      "intro": "Les articles sont récupérés depuis Strapi côté serveur et localisés selon la langue actuelle.",
+      "readMore": "Lire l'article",
+      "backToList": "Tous les articles",
+      "publishedOn": "Publié le {date}",
+      "loading": "Chargement des articles…",
+      "empty": {
+        "title": "Aucun article pour le moment",
+        "description": "Il n'y a aucun article publié dans cette langue. Ajoutez-en dans le panneau d'administration de Strapi."
+      },
+      "unavailable": {
+        "title": "Le service de contenu est indisponible",
+        "description": "Impossible de joindre le CMS pour le moment. Veuillez réessayer dans un instant.",
+        "retry": "Réessayer"
+      },
+      "notFound": {
+        "title": "Article introuvable",
+        "description": "Cet article n'existe pas ou n'est pas disponible dans cette langue."
+      }
+    }
+  }
+}

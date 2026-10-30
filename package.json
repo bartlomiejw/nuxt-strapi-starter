@@ -52,7 +52,7 @@
   "devDependencies": {
     "@commitlint/cli": "^21.2.4",
     "@commitlint/config-conventional": "^21.2.4",
-    "@iconify-json/logos": "^1.2.17",
+    "@iconify-json/logos": "^1.2.18",
     "@iconify-json/lucide": "^1.2.147",
     "@nuxt/eslint": "^1.17.0",
     "@nuxt/test-utils": "^4.3.4",

@@ -39,7 +39,7 @@
     "@primeuix/themes": "~2.0.3",
     "@primevue/nuxt-module": "~4.5.5",
     "@sentry/nuxt": "^11.8.0",
-    "@tailwindcss/vite": "^4.3.3",
+    "@tailwindcss/vite": "^4.3.4",
     "nuxt": "^4.6.2",
     "ofetch": "^1.5.1",
     "pinia": "^4.1.0",

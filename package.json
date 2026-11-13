@@ -30,7 +30,7 @@
     "prepare": "husky"
   },
   "dependencies": {
-    "@dargmuesli/nuxt-cookie-control": "^9.3.10",
+    "@dargmuesli/nuxt-cookie-control": "^10.0.0",
     "@nuxt/fonts": "^1.0.1",
     "@nuxt/icon": "^2.5.1",
     "@nuxtjs/color-mode": "^4.0.1",
